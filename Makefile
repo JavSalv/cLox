@@ -1,8 +1,8 @@
 all:
-	gcc main.c memory.c debug.c chunk.c
+	gcc *.c
 
 headers:
-	gcc *.h
+	gcc *.h; rm *.gch
 
 clean:
 	rm -f *.out; rm -f *.o; rm -f *.gch
